@@ -1,0 +1,10 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:
+    name: Aditya
+    country: India
+  tasks:
+  - name: print the variable
+    ansible.builtin.debug:
+      msg: "name is {{ name }}, country is {{ country }}"
