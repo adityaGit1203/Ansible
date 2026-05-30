@@ -5,11 +5,11 @@
     course_name: "Devops with AWS" # string
     course_duration: 6 # integer
     course_price: 499.99 # float
-    course_topics: # list
+    course_topics: # list [] this means list
       - Ansible
       - Docker
       - Kubernetes
-    course_details: # dictionary
+    course_details: # dictionary {} --- means map  
       ci: jenkins
       cd: gitlab
       live_project: true # boolean
@@ -17,7 +17,7 @@
   - name: display course info
     ansible.builtin.debug:
       msg: "Course Name: {{ course_name }}, Duration: {{ course_duration }} weeks, Price: ${{ course_price }}, Topics: {{ course_topics }}, Details: {{ course_details }}"
-      
+
 
 
 
