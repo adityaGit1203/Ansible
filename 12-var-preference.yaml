@@ -5,10 +5,10 @@
     GREET: "PLAYBOOK"
   # vars_files:
   # - mydetails.yaml
-  vars_prompt:
-  - name: "GREET"
-    prompt: "enter the greet message"
-    private: false
+  # vars_prompt:
+  # - name: "GREET"
+  #   prompt: "enter the greet message"
+  #   private: false
   tasks:
   - name: variables preference
     # vars:
@@ -20,5 +20,6 @@
 #1.command line args
 #2.Task level
 #3 files
-#4 
+#4 prompt
+#5 
 
