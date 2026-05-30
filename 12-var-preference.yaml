@@ -11,7 +11,13 @@
     private: false
   tasks:
   - name: variables preference
-    vars:
-      GREET: "TASK"
+    # vars:
+    #   GREET: "TASK"
     ansible.builtin.debug:
       msg: "hello from {{ GREET }}"
+
+
+#1.command line args
+#2.Task level
+
+
