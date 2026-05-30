@@ -4,4 +4,4 @@
   tasks:
   - name: print the variables
     ansible.builtin.debug:
-    msg: "name is {{ myname }},country is {{ mycountry }}"
+      msg: "name is {{ myname }},country is {{ mycountry }}"
