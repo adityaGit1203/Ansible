@@ -1,0 +1,8 @@
+- name: print variables from args
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the variables
+    ansible.builtin.debug:
+      msg: name is {{ myname }}, country is {{ mycountry }}
+      
