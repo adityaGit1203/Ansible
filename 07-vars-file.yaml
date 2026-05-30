@@ -1,0 +1,10 @@
+- name: prin variables from vars file
+  hosts: local
+  connection: local
+  vars_files:
+  - mydetails.yaml
+  tasks:
+  - name: print the variables
+    ansible.builtin.debug:
+      msg: "name is {{ myname }}, country is {{ mycountry }}"
+ 
