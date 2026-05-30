@@ -3,8 +3,8 @@
   connection: local
   vars:
     GREET: "PLAYBOOK"
-  vars_files:
-  - mydetails.yaml
+  # vars_files:
+  # - mydetails.yaml
   vars_prompt:
   - name: "GREET"
     prompt: "enter the greet message"
@@ -19,5 +19,6 @@
 
 #1.command line args
 #2.Task level
-
+#3 files
+#4 
 
