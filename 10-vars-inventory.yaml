@@ -2,6 +2,5 @@
   hosts: web
   tasks: 
   - name: print the variables
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "name is {{ myname }},country is {{ mycountry }}"
-      
