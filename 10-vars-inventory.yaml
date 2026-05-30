@@ -1,0 +1,7 @@
+- name: print variables from inventory
+  hosts: web
+  tasks: 
+  - name: print the variables
+    ansible.buitin.debug:
+      msg: "name is {{ myname }},country is {{ mycountry }}"
+      
